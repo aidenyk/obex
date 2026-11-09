@@ -46,7 +46,7 @@ Obex isn't on the Google Play Store. You install it straight from this page:
    - **Samsung phones:** if the install is blocked, turn off **Settings → Security and privacy → Auto Blocker** first. You can turn it back on afterwards.
 3. Open **Obex** and sign in to Instagram.
 
-**Requirements:** Android 10 or newer.
+**Requirements:** Android 10 or newer. Tested on a Samsung Galaxy S25 Ultra.
 
 **Updating:** download the newer `Obex.apk` from Releases and install it over the old one. You stay signed in.
 

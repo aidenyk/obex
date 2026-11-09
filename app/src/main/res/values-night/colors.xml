@@ -1,0 +1,9 @@
+<resources>
+    <!-- Instagram's own dark-mode colours -->
+    <color name="ig_bg">#0C1014</color>
+    <color name="ig_icon">#F5F5F5</color>
+    <color name="ig_divider">#262626</color>
+    <!-- Grouped "card" rows and secondary text, Apple-settings style -->
+    <color name="card_bg">#1C1C1E</color>
+    <color name="text_secondary">#8E8E93</color>
+</resources>

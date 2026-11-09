@@ -1,0 +1,14 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+*.keystore
+keystore.properties
+
+# Never upload: app files (they go in GitHub Releases instead) and the signing key
+*.apk
+*.aab
+*.jks
+keystore.properties

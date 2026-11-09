@@ -1,0 +1,19 @@
+<resources>
+    <style name="Theme.Obex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Black and white only: no purple accents anywhere. -->
+        <item name="colorPrimary">@color/ig_icon</item>
+        <item name="colorOnPrimary">@color/ig_bg</item>
+        <item name="colorPrimaryContainer">@color/card_bg</item>
+        <item name="colorOnPrimaryContainer">@color/ig_icon</item>
+        <item name="colorSecondary">@color/ig_icon</item>
+        <item name="colorSurface">@color/ig_bg</item>
+        <item name="colorOnSurface">@color/ig_icon</item>
+        <item name="colorSurfaceContainerHighest">@color/card_bg</item>
+        <item name="colorOutline">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/ig_bg</item>
+    </style>
+    <style name="CircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Obex</string>
+    <string name="tab_messages">Messages</string>
+    <string name="tab_stories">Stories</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_lock">Lock</string>
+    <string name="lock_service_label">Obex – Instagram lock</string>
+    <string name="lock_service_description">When the real Instagram app opens, Obex opens instead. It only checks which app is in front. It never reads what is on your screen.</string>
+    <string name="settings_title">Lock</string>
+    <string name="settings_lock_switch">Redirect Instagram app</string>
+    <string name="settings_permission">Accessibility permission</string>
+    <string name="settings_lock_explain">Keep the real Instagram app installed so you still get its notifications. When it opens, or when you tap one of its notifications, you land here instead.</string>
+    <string name="settings_service_on">On</string>
+    <string name="settings_service_off">Off</string>
+    <string name="settings_open_accessibility">Open Accessibility Settings</string>
+    <string name="settings_accessibility_steps">The lock needs this permission to work. In Settings, go to Installed apps → Obex and switch it on. If it is greyed out, open Settings → Apps → Obex → ⋮ (top right) → Allow restricted settings, then try again.</string>
+    <string name="settings_reload">Reload Instagram</string>
+    <string name="disclosure_title">About the Accessibility permission</string>
+    <string name="disclosure_message">Obex uses Android\'s Accessibility permission for one thing only: to notice when the real Instagram app opens, so it can open Obex instead.\n\n• It is only told about Instagram\'s app, nothing else.\n• It never reads what\'s on your screen, what you type, or your messages.\n• Nothing is collected or sent anywhere.\n\nYou can switch it off at any time in Settings → Accessibility.</string>
+    <string name="disclosure_continue">Continue</string>
+    <string name="disclosure_cancel">Not now</string>
+</resources>

@@ -1,0 +1,103 @@
+/* Obex hiding rules. Injected into every instagram.com page by guard.js.
+   Instagram's class names change often, so these target link addresses, ARIA labels
+   and page structure rather than class names. */
+
+/* Buttons that lead to the feed, Reels or Explore. */
+a[href="/"],
+a[href="/reels/"],
+a[href^="/reels/audio"],
+a[href="/explore/"],
+a[href^="/explore/"]:not([href^="/explore/search"]):not([href^="/explore/tags/"]) {
+  display: none !important;
+}
+
+/* Carousel arrow buttons (notes row in Messages, sticker categories). You can swipe instead.
+   Only on DM pages, so story navigation is untouched. */
+html.rb-direct button[aria-label="Next"],
+html.rb-direct button[aria-label="Go back"],
+html.rb-direct button[aria-label="Previous"] {
+  display: none !important;
+}
+
+/* Sticker / GIF pop-up: rounder corners and room above the tab icons. (Tagged by guard.js.) */
+.rb-sticker-panel {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
+.rb-sticker-panel [role="tablist"] {
+  padding-top: 10px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Home page while the app hasn't yet said which tab is open (a split second). */
+html.rb-pending main {
+  visibility: hidden !important;
+}
+
+/* Instagram's own bottom bar (found and tagged by guard.js). Our dock replaces it. */
+.rb-hidden {
+  display: none !important;
+}
+
+/* Stories tab: keep the stories row and hide the feed of posts underneath it. */
+html.rb-stories main article,
+html.rb-stories main article ~ *,
+html.rb-stories main [role="progressbar"] {
+  display: none !important;
+}
+
+/* ...and say so in the empty space (the message is added by guard.js). */
+#rb-feed-blocked {
+  display: none;
+}
+html.rb-stories #rb-feed-blocked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 42%;
+  padding: 0 32px;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#rb-feed-blocked .rb-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: rgb(168, 168, 168);
+}
+#rb-feed-blocked .rb-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+#rb-feed-blocked .rb-sub {
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+}
+@media (prefers-color-scheme: light) {
+  #rb-feed-blocked .rb-title { color: rgb(0, 0, 0); }
+  #rb-feed-blocked .rb-sub, #rb-feed-blocked .rb-icon { color: rgb(115, 115, 115); }
+}
+
+/* Voice messages: give the duration label room instead of touching the waveform. */
+[role="slider"][aria-label="Audio progress bar"] + [role="timer"] {
+  margin-left: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+/* No scroll bars inside Instagram's own scrolling areas either. */
+::-webkit-scrollbar {
+  display: none !important;
+}
+* {
+  scrollbar-width: none !important;
+}
